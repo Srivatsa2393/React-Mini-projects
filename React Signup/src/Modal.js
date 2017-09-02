@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import Input from '/Input';
 
 class Modal extends Component{
     render(){
