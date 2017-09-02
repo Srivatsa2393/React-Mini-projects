@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import CSSTransitionGroup from 'react-addons-css-transition-group';
-
+import Modal from './Modal';
 
 class App extends Component {
  constructor(props){
