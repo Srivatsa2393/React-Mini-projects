@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import CSSTransitionGroup from 'react-addons-css-transition-group';
+import { CSSTransitionGroup } from 'react-transition-group';
 import Modal from './Modal';
 
 class App extends Component {
@@ -34,13 +34,13 @@ class App extends Component {
     }
     return (
       <div className="App">
-        <ReactCSSTransitionGroup 
+        <CSSTransitionGroup 
           transitionName="example"
           transitionEnterTimeout={500}
           transitionLeaveTimeout={300}
         >
           {items}
-        </ReactCSSTransitionGroup>
+        </CSSTransitionGroup>
       </div>
     );
   }
