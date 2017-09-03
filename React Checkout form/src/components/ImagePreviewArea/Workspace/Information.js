@@ -1,4 +1,5 @@
 import React from 'react';
+import pluralize from 'pluralize';
 
 const Information = (props) => {
 
@@ -11,7 +12,7 @@ const Information = (props) => {
 
             <div className="WorkspacePrice">
                 <div className="Price">{props.price} GBP</div>
-                <div className="Duration">/ {duration} </div>
+                <div className="Duration">/ {duration}</div>
             </div>
         </div>
     );

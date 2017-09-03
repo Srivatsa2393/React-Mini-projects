@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+/* import React, { Component } from 'react';
 import Information from './Information';
 import Meta from './Meta';
 
@@ -13,4 +13,4 @@ class WorkSpace extends Component{
     }
 }
 
-export default WorkSpace;
+export default WorkSpace; */

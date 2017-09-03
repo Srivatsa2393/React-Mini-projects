@@ -1,7 +1,9 @@
 import React from 'react';
+import pluralize from 'pluralize';
 
 const Meta = (props) => {
-    var people = pluralize('person', props.people)
+    
+    var people = pluralize('person', props.people);
 
     return(
         <div className="WorkspaceMeta">
@@ -17,4 +19,4 @@ const Meta = (props) => {
     );
 }
 
-export default Meta;
+export default Meta; 
