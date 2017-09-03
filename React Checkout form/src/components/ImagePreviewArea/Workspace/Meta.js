@@ -1,6 +1,8 @@
 import React from 'react';
 
 const Meta = (props) => {
+    var people = pluralize('person', props.people)
+
     return(
         <div className="WorkspaceMeta">
             <div className="Description">
