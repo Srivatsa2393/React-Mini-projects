@@ -1,7 +1,7 @@
 import React from 'react';
 import BasicInput from './BasicInput';
 import ExpiryDate from './ExpiryDate';
-import CheckButton from '/CheckButton';
+import CheckButton from './CheckButton';
 
 const PaymentForm = (props) => {
     return(
