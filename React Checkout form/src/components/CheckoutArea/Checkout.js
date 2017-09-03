@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import OrderSummary from './Form/OrderSummary';
+import PaymentForm from './Form/PaymentForm';
 
 class Checkout extends Component{
     render() {
@@ -11,6 +12,8 @@ class Checkout extends Component{
                     tax={this.props.tax}
                     price={this.props.price}
                 />
+
+                <PaymentForm onSubmit={this.props.onSubmit}/>
             </div>
         );
     }
