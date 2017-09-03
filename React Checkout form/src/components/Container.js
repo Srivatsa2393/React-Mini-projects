@@ -4,7 +4,7 @@ class Container extends Component{
     render() {
         return(
             <div className="Container">
-                I like being loyal
+                {this.props.children}
             </div>
         );
     }
