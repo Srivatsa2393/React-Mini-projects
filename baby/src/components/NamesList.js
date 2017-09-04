@@ -21,7 +21,7 @@ const NamesList = ({ data, filter, favourites, addFavourites }) => {
                     id={person.id}
                     key={i}
                     info={person}
-                    handleFavourite={(id) => addFavourites(id)}
+                    handleFavourites={(id) => addFavourites(id)}
                 />
             )
         })

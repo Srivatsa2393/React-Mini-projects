@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import Name from './Name';
 
 //refactoring it to functional component
-const ShortList = ({ favourites, data }) => {
+const ShortList = ({ favourites, data, deleteFavourites }) => {
 
     const hasFavourites = (favourites.length > 0);
     const favList = favourites.map((fav, i) => {
@@ -11,6 +11,7 @@ const ShortList = ({ favourites, data }) => {
                 id={i}
                 key={i}
                 info={data[fav]}
+                handleFavourites={(id) => deleteFavourites(id)}
             />
         );
     });

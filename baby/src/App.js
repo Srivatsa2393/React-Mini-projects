@@ -23,6 +23,17 @@ class App extends Component {
     this.setState({ favourites: newSet });
   }
 
+  //removre from id from the favourites array
+  deleteFavourites(id){
+    const { favourites } = this.state
+    const newList = [
+      ...favourites.slice(0, id),
+      ...favourites.slice(id + 1)
+    ]
+
+    this.setState({ favourites: newList });
+  }
+
 
   render() {
     const hasSearch = this.state.filterText.length > 0;
@@ -41,7 +52,7 @@ class App extends Component {
           <ShortList 
             data={this.props.data}
             favourites={this.state.favourites}
-           
+            deleteFavourites={this.deleteFavourites.bind(this)}
           />
 
           <NamesList 
