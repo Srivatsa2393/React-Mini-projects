@@ -8,12 +8,7 @@ const NamesList = ({ data, filter, favourites }) => {
     //gather the list of names
     const names = data
     //filtering the names from that
-        .filter((person, i) => {
-            return (
-                //already favorite and not matching the current search value
-                favourites.indexOf(person.id) === -1 && !person.name.toLowerCase().indexOf(input)
-            )
-        })
+       
         //output a name <Name /> component from each name
         .map((person, i) => {
             return (
