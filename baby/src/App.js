@@ -61,13 +61,22 @@ class App extends Component {
             favourites={this.state.favourites}
             addFavourites={this.addFavourites.bind(this)}
           />
-          {/* Show only if user has typed in search. To reset the input field we pass an empty value to the filter update method */}
-          { hasSearch && 
-            <button 
-              onClick={this.filterUpdate.bind(this, '')}>
-              Clear Search
-            </button>
-          }
+            {/* Show only if user has typed in search. To reset the input field we pass an empty value to the filter update method */}
+            { hasSearch && 
+              <button 
+                onClick={this.filterUpdate.bind(this, '')}>
+                Clear Search
+              </button>
+            }
+
+          <div className="credit">
+            Source for obtaining the list of names of babies: 
+              <a href="https://www.yahoo.com/parenting/atticus-tops-baby-names-2015-124073377716.html" target="_blank">
+                Top Baby Names in 2017
+              </a> 
+          </div>
+
+          
         </main>
       </div>
     );
