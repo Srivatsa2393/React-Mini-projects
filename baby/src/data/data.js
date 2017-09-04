@@ -10,7 +10,7 @@ export default [
         sex: 'girl'
       }, {
         id: 1,
-        name: 'Logan',
+        name: 'Srivatsa',
         sex: 'boy'
       }, {
         id: 2,
