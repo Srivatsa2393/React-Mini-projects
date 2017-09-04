@@ -10,12 +10,20 @@ class App extends Component {
     };
   }
 
+  //update the filterText when user types
+  filterUpdate(value){
+    this.setState({ filterText: value });
+  }
+
 
   render() {
     return (
       <div>
         <header>
-          <Search filterVal={this.state.filterText} />
+          <Search 
+            filterVal={this.state.filterText}
+            filterUpdate={this.filterUpdate.bind(this)} 
+          />
         </header>
       </div>
     );
