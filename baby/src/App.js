@@ -1,12 +1,14 @@
 import React, { Component } from 'react';
 import Search from './components/Search';
+import ShortList from './components/ShortList';
 
 
 class App extends Component {
   constructor(props){
     super(props);
     this.state = {
-      filterText: ''
+      filterText: '',
+      favourites: []
     };
   }
 
@@ -25,6 +27,10 @@ class App extends Component {
             filterUpdate={this.filterUpdate.bind(this)} 
           />
         </header>
+
+        <main>
+          <ShortList />
+        </main>
       </div>
     );
   }
