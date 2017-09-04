@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import Search from './components/Search';
-//import ShortList from './components/ShortList';
 import NamesList from './components/NamesList';
+import ShortList from './components/ShortList';
 
 class App extends Component {
   constructor(props){
