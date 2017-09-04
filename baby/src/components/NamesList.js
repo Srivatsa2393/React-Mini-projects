@@ -1,7 +1,7 @@
 import React from 'react';
 import Name from './Name';
 
-const NamesList = ({ data, filter, favourites }) => {
+const NamesList = ({ data, filter, favourites, addFavourites }) => {
 
     const input = filter.toLowerCase();
 
@@ -21,6 +21,7 @@ const NamesList = ({ data, filter, favourites }) => {
                     id={person.id}
                     key={i}
                     info={person}
+                    handleFavourite={(id) => addFavourites(id)}
                 />
             )
         })
