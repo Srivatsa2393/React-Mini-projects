@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import Search from './components/Search';
-import ShortList from './components/ShortList';
-
+//import ShortList from './components/ShortList';
+import NamesList from './components/NamesList';
 
 class App extends Component {
   constructor(props){
@@ -29,10 +29,13 @@ class App extends Component {
         </header>
 
         <main>
-          <ShortList 
-            data={this.props.data} 
+
+          <NamesList 
+            data={this.props.data}
+            filter={this.state.filterText}
             favourites={this.state.favourites}
           />
+
         </main>
       </div>
     );
