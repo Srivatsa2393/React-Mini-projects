@@ -69,14 +69,14 @@ class App extends Component {
               </button>
             }
 
-          <div className="credit">
+          <footer className="credit">
             Source for obtaining the list of names of babies: 
               <a href="https://www.yahoo.com/parenting/atticus-tops-baby-names-2015-124073377716.html" target="_blank">
                 Top Baby Names in 2017
               </a> 
-          </div>
+          </footer>
 
-          
+
         </main>
       </div>
     );
