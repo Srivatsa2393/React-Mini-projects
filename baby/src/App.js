@@ -29,7 +29,10 @@ class App extends Component {
         </header>
 
         <main>
-          <ShortList />
+          <ShortList 
+            data={this.props.data} 
+            favourites={this.state.favourites}
+          />
         </main>
       </div>
     );
