@@ -1,0 +1,14 @@
+import React, { Component } from 'react';
+
+class Display extends Component{
+    render() {
+        var string = this.props.data.join('');
+        return(
+            <div className="Display">
+                {string}
+            </div>
+        );
+    }
+}
+
+export default Display;
