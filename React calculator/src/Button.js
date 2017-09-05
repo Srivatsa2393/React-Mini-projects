@@ -3,8 +3,8 @@ import React, { Component } from 'react';
 class Button extends Component{
     render() {
         return(
-            <div className="Button">
-                Button
+            <div className="Button" data-value={this.props.value} data-size={this.props.size}>
+                {this.props.label}
             </div>
         );
     }
