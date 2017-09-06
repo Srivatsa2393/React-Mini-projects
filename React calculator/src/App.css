@@ -49,3 +49,10 @@ body{
   display: block;
   z-index: 2;
 }
+
+.Buttons{
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  height: 80%;
+}
