@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
 import './App.css';
+import math from 'mathjs';
+import update from 'immutability-helper';
 import Display from './Display';
 import Buttons from './Buttons';
 import Button from './Button';
@@ -32,7 +34,8 @@ class App extends Component {
   calculateOperations(){
     var result = this.state.operations.join('');
     if (result){
-      result = 
+      result = String(math.eval(result));
+      this.setState({ operations: [result] });
     }
   }
 
