@@ -10,6 +10,30 @@ class App extends Component {
     this.state={
       operations: []
     };
+    this.handleClick = this.handleClick.bind(this);
+  }
+
+  handleClick(event){
+    var value = event.target.getAttribute('data-vaalue');
+    switch (value){
+      case 'clear':
+        this.setState({ operations: []});
+        break;
+      
+      case 'equal':
+        this.calculateOperations();
+        break;
+
+      default:
+         
+    }
+  }
+
+  calculateOperations(){
+    var result = this.state.operations.join('');
+    if (result){
+      result = 
+    }
   }
 
 
@@ -19,27 +43,27 @@ class App extends Component {
           <Display data={this.state.operations} />
         <Buttons>
 
-          <Button label="C" value="clear" />
-          <Button label="7" value="7" />
-          <Button label="4" value="4" />
-          <Button label="1" value="4" />
-          <Button label="0" value="0" />
+          <Button onClick={this.handleClick} label="C" value="clear" />
+          <Button onClick={this.handleClick} label="7" value="7" />
+          <Button onClick={this.handleClick} label="4" value="4" />
+          <Button onClick={this.handleClick} label="1" value="4" />
+          <Button onClick={this.handleClick} label="0" value="0" />
 
-          <Button label="/" value="/" />
-          <Button label="8" value="8" />
-          <Button label="5" value="5" />
-          <Button label="2" value="2" />
-          <Button label="." value="." />
+          <Button onClick={this.handleClick} label="/" value="/" />
+          <Button onClick={this.handleClick} label="8" value="8" />
+          <Button onClick={this.handleClick} label="5" value="5" />
+          <Button onClick={this.handleClick} label="2" value="2" />
+          <Button onClick={this.handleClick} label="." value="." />
 
-          <Button label="x" value="*" />
-          <Button label="9" value="9" />
-          <Button label="6" value="6" />
-          <Button label="3" value="3" />
-          <Button label="" value="null" />
+          <Button onClick={this.handleClick} label="x" value="*" />
+          <Button onClick={this.handleClick} label="9" value="9" />
+          <Button onClick={this.handleClick} label="6" value="6" />
+          <Button onClick={this.handleClick} label="3" value="3" />
+          <Button onClick={this.handleClick} label="" value="null" />
 
-          <Button label="-" value="-" />
-          <Button label="+" size="2" value="+" />
-          <Button label="=" size="2" value="equal" />
+          <Button onClick={this.handleClick} label="-" value="-" />
+          <Button onClick={this.handleClick} label="+" size="2" value="+" />
+          <Button onClick={this.handleClick} label="=" size="2" value="equal" />
 
         </Buttons>
       </div>
