@@ -49,6 +49,12 @@ class Icon extends Component{
             .then((data) => {
                 let date = new Date();
                 let time = date.getHours();
+                this.setState({
+                    time: time,
+                    location: city,
+                    temp: Math.round(data.main.temp),
+                    weather_code: data.weather[0].id
+                })
             })
             .catch((error) => {
                 console.log(error);
@@ -61,7 +67,7 @@ class Icon extends Component{
                 <div className="Sky">
                 </div>
                 
-                <WeatherIcon />
+                <WeatherIcon src={this.state.icon} weatherCode={this.state.weather_code} timeOfDay={this.state.time} />
 
                 <div className="Information">
 
