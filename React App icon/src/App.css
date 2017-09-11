@@ -1,0 +1,12 @@
+@import "https://fonts.googleapis.com/css?family=Lato";
+
+body{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  font-family: 'Lato';
+  background: lightcoral;
+  color: white;
+}
+
