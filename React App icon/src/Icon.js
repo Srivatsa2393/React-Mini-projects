@@ -35,7 +35,25 @@ class Icon extends Component{
             });
     }
 
-    
+    //helper method to detrmine the city using the open weather samples api
+    fetchWeatherDate(city){
+        const url = `http://api.openweathermap.org`;
+        const path = `/data/2.5/weather`;
+        const appId = `c417ba710ad7596d28ee66adbfdef103`;
+        const query = `units=imperial&appid=${appId}`;
+
+        fetch(`${url}${path}?q=${city}&${query}`)
+            .then((response) => {
+                return response.json();
+            })
+            .then((data) => {
+                let date = new Date();
+                let time = date.getHours();
+            })
+            .catch((error) => {
+                console.log(error);
+            });
+    }
 
     render() {
         return(
