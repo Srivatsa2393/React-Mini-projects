@@ -22,7 +22,7 @@ class Icon extends Component{
 
     //fetchIP to determine the IP
     fetchIP() {
-        fetch('freegeoip.net/json/')
+        fetch('//freegeoip.net/json/')
             .then((response) => {
                 return response.json();
             })//fetching the city by using open weather sample
@@ -37,12 +37,12 @@ class Icon extends Component{
 
     //helper method to detrmine the city using the open weather samples api
     fetchWeatherDate(city){
-        const url = `http://api.openweathermap.org`;
+        const baseUrl = `http://api.openweathermap.org`;
         const path = `/data/2.5/weather`;
         const appId = `c417ba710ad7596d28ee66adbfdef103`;
         const query = `units=imperial&appid=${appId}`;
 
-        fetch(`${url}${path}?q=${city}&${query}`)
+        fetch(`${baseUrl}${path}?q=${city}&${query}`)
             .then((response) => {
                 return response.json();
             })
@@ -51,8 +51,8 @@ class Icon extends Component{
                 let time = date.getHours();
                 this.setState({
                     time: time,
-                    location: city,
                     temp: Math.round(data.main.temp),
+                    location: city,
                     weather_code: data.weather[0].id
                 })
             })
