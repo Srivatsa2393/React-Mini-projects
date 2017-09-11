@@ -114,3 +114,33 @@ body{
 .Icon[data-hour='23'] .Sky {
   top: -2200px;
 }
+
+.WeatherIcon{
+  width: 100px;
+  height: 100px;
+  position: absolute;
+  top: 25%;
+  left: 25%;
+  z-index: 5;
+  color: white;
+  font-size: 90px;
+  text-align: center;
+}
+
+.Information {
+  position: absolute;
+  bottom: 10px;
+  left: 0;
+  z-index: 99;
+  padding: 10px 30px;
+  color: white;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-sizing: border-box;
+}
+.Information .Location {
+  font-size: 14px;
+  text-transform: uppercase;
+}
