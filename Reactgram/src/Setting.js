@@ -2,7 +2,12 @@ import React from 'react';
 
 function Setting(props){
     return(
-        <h1>Setting</h1>
+        <div className="Setting">
+            <label>
+                <div>{props.name}</div>
+                <div>{props.value}</div>
+            </label>
+        </div>
     );
 }
 
