@@ -7,6 +7,16 @@ function Setting(props){
                 <div>{props.name}</div>
                 <div>{props.value}</div>
             </label>
+
+            <input 
+                min={props.min} 
+                max={props.max} 
+                step="1" 
+                onChange={props.onChange}
+                id={props.name}
+                type="range"
+                value={props.value}
+            />
         </div>
     );
 }
