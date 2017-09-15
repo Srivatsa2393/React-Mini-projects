@@ -41,7 +41,41 @@ handleChange(e){
                 </div>
 
                 <div className="FilterList">
-                    <Filter />
+                    <Filter 
+                        key="Noir" 
+                        filterFunctions={{'contrast':138, 'hue':0, 'brightness':122, 'saturate':0, 'sepia':0}}
+                        onClick={this.updateSettings}
+                    >
+                        <Image image={this.props.image} />
+                    </Filter>
+
+
+                    <Filter 
+                        key="Aged" 
+                        filterFunctions={{'contrast':94, 'hue':-54, 'brightness':92, 'saturate':100, 'sepia':44}}
+                        onClick={this.updateSettings}
+                    >
+                        <Image image={this.props.image} />
+                    </Filter>
+
+
+                    <Filter 
+                        key="Whiteout" 
+                        filterFunctions={{'contrast':32, 'hue':0, 'brightness':173, 'saturate':0, 'sepia':0}}
+                        onClick={this.updateSettings}
+                    >
+                        <Image image={this.props.image} />
+                    </Filter>
+
+                    <Filter 
+                        key="Vintage" 
+                        filterFunctions={{'contrast':164, 'hue':0, 'brightness':47, 'saturate':0, 'sepia':100}}
+                        onClick={this.updateSettings}
+                    >
+                        <Image image={this.props.image} />
+                    </Filter>
+
+                
                 </div>
             </div>
         );
