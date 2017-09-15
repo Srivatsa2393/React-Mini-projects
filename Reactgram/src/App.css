@@ -1,0 +1,16 @@
+@import 'https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900';
+
+.App{
+  align-items: center;
+  font-family: 'Lato', sans-serif;
+  display: flex;
+  font-weight: 300;
+  width: 100vw;
+  height: 100vh;
+  justify-content: center;
+  overflow: hidden;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: #E68EB0;
+}
