@@ -21,4 +21,12 @@ function Setting(props){
     );
 }
 
+Setting.propType = {
+    name: React.PropTypes.string,
+    value: React.PropTypes.number,
+    min: React.PropTypes.number,
+    max: React.PropTypes.number,
+    onChange: React.PropTypes.func
+};
+
 export default Setting;
