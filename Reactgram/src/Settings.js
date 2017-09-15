@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import Setting from './Setting';
 import Filter from './Filter';
+import Image from './Image';
 
 class Settings extends Component{
 constructor(props){
@@ -31,7 +32,11 @@ handleChange(e){
                         <Setting name="brightness" min={0} max={200} value={this.state.brightness} onChange={this.handleChange}></Setting>
                         <Setting name="saturate" min={0} max={100} value={this.state.saturate} onChange={this.handleChange}></Setting>
                         <Setting name="sepia" min={0} max={100} value={this.state.sepia} onChange={this.handleChange}></Setting>
-
+                    </div>
+                    <div className="ImageContainer">
+                        <Filter>
+                            <Image image={this.props.image}/>
+                        </Filter>
                     </div>
                 </div>
 
