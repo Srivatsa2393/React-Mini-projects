@@ -8,4 +8,15 @@ class Filter extends Component{
     }
 }
 
+Filter.propTypes = {
+    onClick: React.PropTypes.func,
+    filterFunctions: React.PropTypes.shape({
+        contrast: React.PropTypes.number,
+        hue: React.PropTypes.number,
+        brightness: React.PropTypes.number,
+        saturate: React.PropTypes.number,
+        sepia: React.PropTypes.number
+    })
+};
+
 export default Filter;

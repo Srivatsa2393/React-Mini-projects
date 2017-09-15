@@ -21,7 +21,7 @@ function Setting(props){
     );
 }
 
-Setting.propType = {
+Setting.propTypes = {
     name: React.PropTypes.string,
     value: React.PropTypes.number,
     min: React.PropTypes.number,

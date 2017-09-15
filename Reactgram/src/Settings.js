@@ -40,7 +40,7 @@ handleChange(e){
                     </div>
                 </div>
 
-                <div>
+                <div className="FilterList">
                     <Filter />
                 </div>
             </div>
