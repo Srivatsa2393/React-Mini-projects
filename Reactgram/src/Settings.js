@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import Setting from './Setting';
+import Filter from './Filter';
 
 class Settings extends Component{
 constructor(props){
@@ -32,6 +33,10 @@ handleChange(e){
                         <Setting name="sepia" min={0} max={100} value={this.state.sepia} onChange={this.handleChange}></Setting>
 
                     </div>
+                </div>
+
+                <div>
+                    <Filter />
                 </div>
             </div>
         );
