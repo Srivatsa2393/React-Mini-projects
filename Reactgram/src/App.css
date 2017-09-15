@@ -14,3 +14,22 @@
   left: 0;
   background: #E68EB0;
 }
+
+.ImageBG{
+  position: absolute;
+  top: -5vh;
+  left: -5vh;
+  width: 110vw;
+  height: 110vh;
+  background-size: cover;
+  opacity: 1;
+  mix-blend-mode: multiply;
+  filter: blur(10px);
+}
+
+.Settings{
+  width: 90vw;
+  height: 90vh;
+  position: relative;
+  z-index: 2;
+}
