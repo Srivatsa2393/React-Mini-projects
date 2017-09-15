@@ -33,3 +33,102 @@
   position: relative;
   z-index: 2;
 }
+
+.MainWrapper{
+  display: flex;
+  width: 100%;
+  height: 85%;
+}
+
+.MainWrapper .Sidebar{
+  width: 30%;
+  max-width: 350px;
+  height: 100%;
+  background: rgba(219, 219, 236, 0.93);
+}
+
+@media screen and (max-width: 880px) {
+  .MainWrapper .Sidebar{
+    display: none;
+  }
+}
+
+.MainWrapper .Sidebar .Title{
+  width: 100%;
+  padding: 20px;
+  box-sizing: border-box;
+  text-transform: uppercase;
+  color:black;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  font-weight: 600;
+  letter-spacing: 0.2em;
+  font-size: 12px;
+}
+
+.MainWrapper .Sidebar .Setting{
+  padding: 0 20px;
+  margin-top: 20px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.MainWrapper .Sidebar .Setting label{
+  font-weight: 400;
+  text-transform: uppercase;
+  color: #F41818;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 5px;
+  font-size: 12px;
+  letter-spacing: .2em;
+  opacity: 1;
+}
+
+.MainWrapper .Sidebar .Setting input{
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.MainWrapper .ImageContainer{
+  width: 50%;
+  background: rgba(28, 34, 47, 0.5);
+  display: flex;
+  flex: 1 0 auto;
+}
+
+.MainWrapper .ImageContainer .Filter{
+  display: flex;
+  flex: 1 0 auto;
+  justify-content: center;
+  align-items: center;
+}
+
+.MainWrapper .ImageContainer .Image {
+  height: 90%;
+  width: 90%;
+  background-size: cover;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+  background-position: center;
+  position: relative;
+  transition: filter .125s ease; 
+}
+
+.MainWrapper .ImageContainer .Image::before {
+  content: '';
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: .3; 
+}
+
+.MainWrapper .ImageContainer .Image::after {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  mix-blend-mode: overlay;
+  left: 0;
+  z-index: 3;
+  content: ''; 
+}
