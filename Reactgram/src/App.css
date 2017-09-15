@@ -44,7 +44,7 @@
   width: 30%;
   max-width: 350px;
   height: 100%;
-  background: rgba(219, 219, 236, 0.93);
+  background: rgba(32, 32, 96, 0.93);
 }
 
 @media screen and (max-width: 880px) {
@@ -58,7 +58,7 @@
   padding: 20px;
   box-sizing: border-box;
   text-transform: uppercase;
-  color:black;
+  color:#21D461;
   border-bottom: 1px solid rgba(255, 255, 255, 0.1);
   font-weight: 600;
   letter-spacing: 0.2em;
@@ -74,7 +74,7 @@
 .MainWrapper .Sidebar .Setting label{
   font-weight: 400;
   text-transform: uppercase;
-  color: #F41818;
+  color: #F4186D;
   display: flex;
   justify-content: space-between;
   margin-bottom: 5px;
@@ -131,4 +131,46 @@
   left: 0;
   z-index: 3;
   content: ''; 
+}
+
+.FilterList{
+  width: 100%;
+  height: calc(15% - 10px);
+  background: rgba(46, 56, 79, 0.45);
+  box-sizing: border-box;
+  padding: 20px;
+  display: flex;
+  overflow-x: auto;
+}
+
+.FilterList .Filter{
+  width: 25%;
+  height: 100%;
+  position: relative;
+  flex: 1 0 1;
+  margin-right: 20px;
+  background: #212839;
+  box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.25);
+  transition: box-shadow .25s ease, transform .25s ease;
+}
+
+.FilterList .Filter:hover{
+  cursor: pointer;
+  box-shadow: 0 10px 20px -10px black;
+  transform: scale(1.1); 
+}
+
+.FilterList .Filter:last-child {
+  margin-right: 0px; 
+}
+
+.FilterList .Filter .Image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  transition: filter .25s ease .25s; 
 }
