@@ -18,14 +18,14 @@ class Filter extends Component{
     }
 
     render() {
-        let filterstring = this.getFilterCSSStyles();
+        let filterstring = this.getFilterCSSStyles(this.props.filterFunctions);
         return(
             <div 
                 className="filter"
                 style={{width: '100%', height: '100%', filter: filterstring}}
-                onClick={}
+                onClick={() => {this.props.onClick(this.props.filterFunctions)}}
             >
-                
+                {this.props.children}
             </div>
         );
     }

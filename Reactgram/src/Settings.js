@@ -15,8 +15,19 @@ constructor(props){
     };
 }
 
-handleChange(e){
-    e.preventDefault();
+handleChange = (e) => {
+    //e.preventDefault();
+    let filter = e.target.id;
+    let value= e.target.value;
+
+    this.setState((prevState, props) => {
+        prevState[filter] = value;
+        return prevState;
+    });
+};
+
+updateSettings = (nextFilterState) => {
+    this.setState(nextFilterState);
 }
 
     render() {
@@ -34,7 +45,7 @@ handleChange(e){
                         <Setting name="sepia" min={0} max={100} value={this.state.sepia} onChange={this.handleChange}></Setting>
                     </div>
                     <div className="ImageContainer">
-                        <Filter>
+                        <Filter key="Default" filterFunctions={this.state}>
                             <Image image={this.props.image}/>
                         </Filter>
                     </div>
