@@ -9,6 +9,7 @@ import {
   } from 'react-router-dom';
 
 import Home from './pages/Home';
+import About from './pages/About';
 import './index.css';
 
 import registerServiceWorker from './registerServiceWorker';
@@ -26,6 +27,7 @@ ReactDOM.render(
 
             <Switch>
                 <Route path="/" exact component={Home} />
+                <Route path="/about" component={About} />
             </Switch>
         </div>
     </BrowserRouter>
