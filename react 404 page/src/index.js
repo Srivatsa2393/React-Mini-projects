@@ -19,6 +19,8 @@ ReactDOM.render(
             <nav>
                 <ul>
                     <li><NavLink to="/">Home</NavLink></li>
+                    <li><NavLink to="/about">About</NavLink></li>
+                    <li><NavLink to="/not-found">Invalid Page</NavLink></li>
                 </ul>
             </nav>
 
