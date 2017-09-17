@@ -21,6 +21,7 @@ ReactDOM.render(
             <nav>
                 <ul>
                     <li><NavLink to="/">Home</NavLink></li>
+                    <li><NavLink to="/about-us">You will be redirected</NavLink></li>
                     <li><NavLink to="/about">About</NavLink></li>
                     <li><NavLink to="/not-found">Invalid Page</NavLink></li>
                 </ul>
@@ -28,6 +29,7 @@ ReactDOM.render(
 
             <Switch>
                 <Route path="/" exact component={Home} />
+                <Redirect from="/about-us" to="/about" />
                 <Route path="/about" component={About} />
                 <Route component={NotFound} />
             </Switch>
