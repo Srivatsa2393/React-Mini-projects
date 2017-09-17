@@ -1,8 +1,27 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import {
+    BrowserRouter,
+    Route,
+    NavLink,
+    Switch,
+    Redirect
+  } from 'react-router-dom';
+
+import Home from './pages/Home';
 import './index.css';
-import App from './App';
+
 import registerServiceWorker from './registerServiceWorker';
 
-ReactDOM.render(<App />, document.getElementById('root'));
+ReactDOM.render(
+    <BrowserRouter>
+        <div>   
+            <nav>
+                <ul>
+                    <li><NavLink to="/">Home</NavLink></li>
+                </ul>
+            </nav>
+        </div>
+    </BrowserRouter>
+    , document.getElementById('root'));
 registerServiceWorker();
