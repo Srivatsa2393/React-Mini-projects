@@ -10,6 +10,7 @@ import {
 
 import Home from './pages/Home';
 import About from './pages/About';
+import NotFound from './pages/NotFound/NotFound';
 import './index.css';
 
 import registerServiceWorker from './registerServiceWorker';
@@ -28,6 +29,7 @@ ReactDOM.render(
             <Switch>
                 <Route path="/" exact component={Home} />
                 <Route path="/about" component={About} />
+                <Route component={NotFound} />
             </Switch>
         </div>
     </BrowserRouter>
