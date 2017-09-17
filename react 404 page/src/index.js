@@ -21,6 +21,10 @@ ReactDOM.render(
                     <li><NavLink to="/">Home</NavLink></li>
                 </ul>
             </nav>
+
+            <Switch>
+                <Route path="/" exact component={Home} />
+            </Switch>
         </div>
     </BrowserRouter>
     , document.getElementById('root'));

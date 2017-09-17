@@ -1,8 +1,10 @@
 import React from 'react';
 
-const Home = () => {
+function Home(props){
     return(
-        <h1>Home Component</h1>
+        <div className="page-container">
+            <h1 className="title">Hello</h1>
+        </div>
     );
 };
 
