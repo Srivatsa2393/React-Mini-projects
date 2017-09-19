@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import data from './tracks.json';
 
 class TrackList extends Component{
-    components(props){
+    constructor(props){
         super(props);
         this.state = {
             tracks: []
