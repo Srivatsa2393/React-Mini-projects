@@ -19,15 +19,31 @@ class App extends Component {
           let currentTrackIndex = state.currentTrackIndex;
           if (currentTrackIndex === 0){
             currentTrackIndex = 1;
-          }
-          return{
-            playing: true,
-            currentTrackIndex: currentTrackIndex
+          }else{
+            return{
+              playing: true,
+              currentTrackIndex: currentTrackIndex
+            };
           }
         });
         break;
       
       case "pause":
+        this.setState({ playing: false});
+        break;
+
+      case "prev":
+        this.setState((state, props) => {
+          let currentIndex = state.currentTrackIndex - 1;
+          if(currentIndex <= 0){
+            return null;
+          }else{
+            return {
+              playing: true,
+              currentTrackIndex: currentIndex
+            };
+          }
+        });
     }
   }
 
