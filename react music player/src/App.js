@@ -44,6 +44,24 @@ class App extends Component {
             };
           }
         });
+        break;
+
+      case "next":
+        this.setState((state, props) => {
+          let currentIndex = state.currentTrackIndex + 1;
+          if(currentIndex > data.tracks.length){
+            return null;
+          }else{
+            return{
+              playing: true,
+              currentTrackIndex: currentIndex
+            };
+          }
+        });
+        break;
+
+      default:
+        break;
     }
   }
 
