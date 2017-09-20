@@ -14,9 +14,14 @@ class App extends Component {
     this.handleClick = this.handleClick.bind(this);
     this.playAudio = this.playAudio.bind(this);
     this.pauseAudio = this.pauseAudio.bind(this);
+    this.selectTrackNumber = this.selectTrackNumber.bind(this);
   }
 
-  playAudio(){
+  selectTrackNumber(trackId) {
+    this.setState({ currentTrackIndex: trackId, playing: true }, this.playAudio);
+  }
+
+  playAudio() {
     this.audioElement.load();
     this.audioElement.play();
   }
@@ -91,6 +96,11 @@ class App extends Component {
             src={"/songs/"+this.state.currentTrackIndex+".mp3"}
           />
         </div>
+
+        <TrackList 
+          currentTrackIndex={this.state.currentTrackIndex}
+          selectTrackNumber={this.selectTrackNumber}
+        />
       </div>
     );
   }
