@@ -101,6 +101,12 @@ class App extends Component {
           currentTrackIndex={this.state.currentTrackIndex}
           selectTrackNumber={this.selectTrackNumber}
         />
+
+        <div className="MusicCredit">
+          <a href="https://www.bensound.com">
+            https://www.bensound.com
+          </a>
+        </div>
       </div>
     );
   }
