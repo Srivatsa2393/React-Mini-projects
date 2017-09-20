@@ -3,8 +3,34 @@ import React, { Component } from 'react';
 class Controls extends Component{
     render() {
         return(
-            <div>
-                Controls
+            <div className="Controls">
+                <i 
+                    id="prev"
+                    className="fa fa-fw fa-fast-backward"
+                    onClick={this.props.onClick}
+                />  
+                
+                {!this.props.playing && 
+                    <i 
+                        id="play"
+                        onClick={this.props.onClick}
+                        className="fa fa-fw fa-play"
+                    />
+                }
+
+                {this.props.playing && 
+                    <i 
+                        id="pause"
+                        onClick={this.props.onClick}
+                        className="fa fa-fw fa-pause"
+                    />
+                }
+
+                <i 
+                    id="next"
+                    onClick={this.props.onClick}
+                    className="fa fa-fw fa-fast-forward"
+                />
             </div>
         );
     }
