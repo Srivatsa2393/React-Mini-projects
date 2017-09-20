@@ -12,6 +12,17 @@ class App extends Component {
       currentTrackIndex: 0
     };
     this.handleClick = this.handleClick.bind(this);
+    this.playAudio = this.playAudio.bind(this);
+    this.pauseAudio = this.pauseAudio.bind(this);
+  }
+
+  playAudio(){
+    this.audioElement.load();
+    this.audioElement.play();
+  }
+
+  pauseAudio() {
+    this.audioElement.pause();
   }
 
   handleClick(e){
@@ -27,11 +38,11 @@ class App extends Component {
               currentTrackIndex: currentTrackIndex
             };
           }
-        });
+        }, this.playAudio);
         break;
       
       case "pause":
-        this.setState({ playing: false});
+        this.setState({ playing: false}, this.pauseAudio);
         break;
 
       case "prev":
@@ -45,7 +56,7 @@ class App extends Component {
               currentTrackIndex: currentIndex
             };
           }
-        });
+        }, this.playAudio);
         break;
 
       case "next":
@@ -59,7 +70,7 @@ class App extends Component {
               currentTrackIndex: currentIndex
             };
           }
-        });
+        }, this.playAudio);
         break;
 
       default:
@@ -75,6 +86,10 @@ class App extends Component {
           style={{ backgroundImage:  'url(' + data.artwork + ')'}}
         >
           <Controls onClick={this.handleClick} playing={this.state.playing} />
+          <audio 
+            ref={(audio) => {this.audioElement = audio}} 
+            src={"/songs/"+this.state.currentTrackIndex+".mp3"}
+          />
         </div>
       </div>
     );
