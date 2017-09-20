@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
 import TrackList from './TrackList';
+import data from './tracks.json';
+import Controls from './Controls';
 import './App.css';
 
 class App extends Component {
