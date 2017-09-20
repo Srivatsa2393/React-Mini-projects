@@ -11,6 +11,26 @@ class App extends Component {
     };
     this.handleClick = this.handleClick.bind(this);
   }
+
+  handleClick(e){
+    switch(e.target.id){
+      case "play":
+        this.setState((state, props) => {
+          let currentTrackIndex = state.currentTrackIndex;
+          if (currentTrackIndex === 0){
+            currentTrackIndex = 1;
+          }
+          return{
+            playing: true,
+            currentTrackIndex: currentTrackIndex
+          }
+        });
+        break;
+      
+      case "pause":
+    }
+  }
+
   render() {
     return (
       <div className="App">
