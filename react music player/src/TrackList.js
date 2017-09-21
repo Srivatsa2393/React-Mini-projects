@@ -14,9 +14,7 @@ class TrackList extends Component{
         this.setState({ tracks: data.tracks });
     }
 
-    componentDidUpdate() {
-        if()
-    }
+    
 
     renderListItem(track, i){
         let trackClass = this.props.currentTrackIndex === track.id ? "selected" : "";
@@ -31,7 +29,9 @@ class TrackList extends Component{
                 }}
                 onClick={() => {this.props.selectTrackNumber(track.id)}}
             >
-
+                <div className="number">{track.id}</div>
+                <div className="title">{track.title}</div>
+                <div className="duration">{track.duration}</div>
             </li>
         )
     }
@@ -39,8 +39,13 @@ class TrackList extends Component{
     render(){
         let tracks = this.state.tracks.map(this.renderListItem);
         return(
-            <ul className="TrackList">
-
+            <ul 
+                className="TrackList"
+                ref={input => {
+                    this.trackList = input;
+                }}
+            >
+                {tracks}
             </ul>
         );
     }
