@@ -1,0 +1,83 @@
+body {
+    font-family: 'Open Sans', sans-serif;
+    min-height: 95vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+.row{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    align-items: center;
+    padding: 0 25px;
+}
+
+.card{
+    width: 150px;
+    border: 1px solid red;
+    border-radius: 4px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+
+.card-header{
+    color: darkred;
+    text-align: center;
+    font-size: 12px;
+    font-weight: 600;
+    border-bottom: 1px solid #EF9A9A;
+    background-color: #FFEBEE;
+    padding: 5px 10px;
+}
+
+.card-main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 15px 0;
+}
+
+.material-icons{
+    font-size: 36px;
+    color: #D32F2F;
+    margin-bottom: 5px;
+}
+
+.main-description{
+    color: #D32F2F;
+    font-size: 12px;
+    text-align: center;
+}
+
+#or-border{
+    border-color: #FFE082;
+}
+
+#or-header{
+    background-color: #FFF8E1;
+    border-color: #FFE082;
+    color: #FFA000;
+}
+
+#or-color {
+    color: #FFA000;
+}
+
+#red-border {
+    border-color: #EF9A9A;
+}
+  
+#red-header {
+    background-color: #FFEBEE;
+    border-color: #EF9A9A;
+    color: #D32F2F;
+}
+  
+#red-color {
+    color: #D32F2F;
+}
