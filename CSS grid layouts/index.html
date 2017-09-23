@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>CSS grid layout</title>
+        <style>
+
+            .wrapper{
+                display: grid;
+                grid-template-columns: 70% 30%;
+            }
+
+            .wrapper > div{
+                background: #eee;
+                padding: 1em;
+            }
+
+
+            .wrapper > div:nth-child(odd){
+                background: #ddd;
+            }
+        </style>
+    </head>
+
+    <body>
+        <div class="wrapper">
+
+            <div>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
+                Asperiores nemo dolores maxime eaque tempore enim consequuntur! Omnis voluptates excepturi 
+                expedita officiis nobis ipsam iusto accusamus tenetur? Suscipit odit aliquam vel.
+            </div>
+
+            <div>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
+                Omnis quae, aliquam quo at saepe blanditiis quam iusto excepturi incidunt recusandae distinctio, 
+                enim voluptas assumenda dolore delectus et natus rerum minus?
+            </div>
+
+            <div>
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
+                    Asperiores nemo dolores maxime eaque tempore enim consequuntur! Omnis voluptates excepturi 
+                    expedita officiis nobis ipsam iusto accusamus tenetur? Suscipit odit aliquam vel.
+                </div>
+    
+            <div>
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
+                    Omnis quae, aliquam quo at saepe blanditiis quam iusto excepturi incidunt recusandae distinctio, 
+                    enim voluptas assumenda dolore delectus et natus rerum minus?
+            </div>
+        </div>
+    </body>
+</html>
