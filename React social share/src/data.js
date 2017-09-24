@@ -1,4 +1,4 @@
-var data = {
+/* var data = {
     title: 'ReactJS Social Share',
     author: 'Srivatsa',
     image: 'https://www.mercedes-benz.com/wp-content/uploads/sites/3/2016/06/01_Mercedes-Benz-Vehicles-AMG-GT-R-1280x686-1280x686.jpg?format=750w',
@@ -15,4 +15,4 @@ var data = {
             url: 'https://twitter.com/intent/tweet?hashtags=react,ui,dev&text=ReactJS%20Daily%20UI%20on%20Codepen&tw_p=tweetbutton&url=https://github.com/Srivatsa2393'
         }
     ]
-};
+}; */
