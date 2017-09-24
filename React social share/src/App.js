@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import Image from './Image';
 import './App.css';
 
 class App extends Component {
@@ -36,6 +37,7 @@ class App extends Component {
           author={this.state.data.author}
           image={this.state.data.image}
         />
+        <Buttons data={this.state.data} />
       </div>
     );
   }
