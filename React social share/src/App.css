@@ -1,0 +1,16 @@
+@import 'https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700';
+
+#root{
+    height: 100vh;
+    width: 100vw;
+    background: mistyrose;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Open Sans', sans-serif;
+}
+
+#root .App{
+    width: 400px;
+}
