@@ -17,7 +17,7 @@
 
 /*Image component styling*/
 .Image{
-    width: 500px;
+    width: auto;
     height: 500px;
     border-top-left-radius: 5px;
     border-top-right-radius: 5px;
@@ -83,4 +83,22 @@
     font-size: 12px;
     font-weight: 600;
     background: rgba(0, 0, 0, 0.125);
+}
+
+.Buttons .Button[data-type=facebook] {
+    background: #3b5998;
+    border-bottom-left-radius: 5px;
+}
+
+.Buttons .Button[data-type=facebook]:hover{
+    background: #4c70ba;
+}
+
+.Buttons .Button[data-type=twitter] {
+    background: #00aced;
+    border-bottom-right-radius: 5px;
+}
+
+.Buttons .Button[data-type=facebook] {
+    background: #21c2ff;
 }
