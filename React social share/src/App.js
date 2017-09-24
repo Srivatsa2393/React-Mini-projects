@@ -31,7 +31,11 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        App component
+        <Image 
+          title={this.state.data.title} 
+          author={this.state.data.author}
+          image={this.state.data.image}
+        />
       </div>
     );
   }
