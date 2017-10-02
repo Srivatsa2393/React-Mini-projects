@@ -6,7 +6,7 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        <StatusIcon />
+        <StatusIcon status="bad" />
         {this.props.message}
       </div>
     );
