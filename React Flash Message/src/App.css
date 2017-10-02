@@ -1,25 +1,42 @@
-@import 'https://fonts.googleapis.com/css?family=Concert+One';
-
-#root{
+@import "https://fonts.googleapis.com/css?family=Concert+One";
+#root {
   position: absolute;
   top: 0;
   font-family: 'Concert One', sans-serif;
-  font-size: 50px;
+  font-size: 30px;
   left: 0;
-	width: 100vw;
-	height: 100vh;
+  width: 100vw;
+  height: 100vh;
   background: rebeccapurple;
   display: flex;
-	align-items: center;
-	justify-content: center;
+  align-items: center;
+  justify-content: center;
 }
 
-.Message{
-  width: 500px;
+.StatusIcon {
+  width: 96px;
+  height: 96px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 42px;
+  color: white;
+  border-radius: 96px;
+  margin: 20px auto;
+}
+.StatusIcon[data-status='good'] {
+  background: #3DDC97;
+}
+.StatusIcon[data-status='bad'] {
+  background: #DC493A;
+}
+
+.Message {
+  width: 300px;
   text-align: center;
   padding-bottom: 30px;
-	border-radius: 20px;
-	background: white;
-	color: rgba(black, .8);
-	box-shadow: 0 10px 20px rgba(black, .2);
+  border-radius: 20px;
+  background: white;
+  color: rgba(0, 0, 0, 0.8);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
 }
