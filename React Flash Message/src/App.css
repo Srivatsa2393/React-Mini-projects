@@ -13,3 +13,13 @@
 	align-items: center;
 	justify-content: center;
 }
+
+.Message{
+  width: 500px;
+  text-align: center;
+  padding-bottom: 30px;
+	border-radius: 20px;
+	background: white;
+	color: rgba(black, .8);
+	box-shadow: 0 10px 20px rgba(black, .2);
+}
