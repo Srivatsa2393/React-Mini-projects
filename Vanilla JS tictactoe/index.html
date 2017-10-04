@@ -1,12 +1,61 @@
 <html>
     <head>
         <title>Tictactoe</title>
-        <link rel="stylesheet" href="css/index1.css">
+
+        <!-- metadata -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="Tic-Tac-Toe Game">
+
+        <!-- GOOGLE FONTS -->
+        <link href="https://fonts.googleapis.com/css?family=Architects+Daughter|Open+Sans:300,700" rel="stylesheet">
+
+        <!-- CSS STYLESHEET -->
+        <link rel="stylesheet" href="css/style.css">
     </head>
 
     <body>
-        <div class="app">
-            Tictactoe
-        </div>
+        <header>
+            <nav>
+                <h1 class="logo">
+                    <a href="#">
+                        <i class="fa fa-free-code-camp" aria-hidden="true"></i>
+                        <span>Tic</span>
+                        <span>Tac</span>
+                        <span>Toe</span>
+                    </a>
+                </h1>
+            </nav>
+        </header>
+
+
+        <main>
+            <section>
+                <div class="row">
+                    <div id="1" class="square right-border"></div>
+                    <div id="2" class="square right-border"></div>
+                    <div id="3" class="square"></div>
+                </div>
+
+                <div class="row">
+                    <div id="4" class="square top-border right-border"></div>
+                    <div id="5" class="square top-border right-border"></div>
+                    <div id="6" class="square top-border"></div>
+                </div>
+
+                <div class="row">
+                    <div id="7" class="square top-border right-border"></div>
+                    <div id="8" class="square top-border right-border"></div>
+                    <div id="9" class="square top-border"></div>
+                </div>
+
+                <div class="row">
+                    <button role="button" class="restart">
+                        <i class="fa fa-repeat" aria-hidden="true"></i>
+                        RESTART
+                    </button>
+                </div>
+            </section>
+        </main>    
     </body>
 </html>
