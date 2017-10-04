@@ -4,8 +4,8 @@ class Information extends Component{
     render() {
         return(
             <div className="Information">
-                <div className="title">
-                    Lebron James Nike Air Zoom Pegasus 33 iD
+                <div className="Title">
+                    Mo Farah Nike Air Zoom Pegasus 33 iD
                 </div>
 
                 <div className="Price">

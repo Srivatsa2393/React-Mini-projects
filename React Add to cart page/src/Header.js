@@ -4,7 +4,7 @@ class Header extends Component{
     render() {
         return(
             <header className="Header">
-                <svg className="logo" 
+                <svg className="Logo" 
                      width="200" 
                      height="72" 
                      viewBox="135.5 361.375 200 72" 
