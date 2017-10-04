@@ -4,7 +4,7 @@ import Header from './Header';
 class Product extends Component{
     render() {
         return(
-            <div>
+            <div className="Product">
                 <Header />
             </div>
         );
