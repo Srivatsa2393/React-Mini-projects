@@ -56,6 +56,58 @@
                     </button>
                 </div>
             </section>
-        </main>    
+
+            <!-- MODAL WORLD -->
+
+            <!-- Modal Background -->
+
+            <div id="modal-bg" class=""></div>
+
+            <!-- Start modal -->
+
+            <div id="start" class="">
+                <div class="close">
+                    <p>x</p>
+                </div>
+                <h2>Choose</h2>
+
+                <div id="player" class="row">
+                    <div id="one">
+                        <h4 class="grey">One player</h4>
+                    </div>
+                    <div id="two">
+                        <h4>Two players</h4>
+                    </div>
+                </div>
+
+                <div id="symbol" class="hidden">
+                    <div id="X">
+                        <h3>X</h3>
+                    </div>
+                    <div id="O">
+                        <h3>O</h3>
+                    </div>
+                </div>
+            </div>
+
+            <div id="winner" class="hidden">
+                <div class="close">
+                    <p>x</p>
+                </div>
+                <h2 id="who-wins"></h2>
+                <button role="button" class="restart">
+                    <i class="fa fa-repeat" aria-hidden="true"></i>
+                    RESTART
+                </button>
+            </div>
+        </main>   
+        
+        <footer>
+            <p class="built">Built with Vanilla JS and SASS<i class="fa fa-heart" aria-hidden="true"></i> by <strong>Srivatsa</strong></p>
+        </footer>
+
+        <!-- JAVASCIPT -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.4/lodash.min.js"></script>
+        <script type="text/javascript" src="main.js"></script>
     </body>
 </html>
