@@ -1,0 +1,40 @@
+//Adding styling using SASS
+
+$animation-speed: 2.5s;
+
+.Switch{
+    position: absolute;
+    overflow: hidden;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: mistyrose;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+    &::before{
+        height: 1000vh;
+        width: 100vw;
+        position: absolute;
+        content: '';
+        top: 0;
+        left: 0;
+        background: linear-gradient(to bottom,  rgba(17,28,43,1) 0%,rgba(53,55,130,1) 12%,
+                    rgba(255,102,135,1) 28%,rgba(255,185,89,1) 45%,rgba(135,224,253,1) 72%,
+                    rgb(81, 202, 241) 87%,rgba(5,171,224,1) 100%);
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#111c2b', 
+                endColorstr='#05abe0',GradientType=0 );
+        transition: top $animation-speed ease;
+    }
+
+
+    &[data-time="day"]{
+        &::before{
+            top: -900vh;
+        }
+    }
+
+}
