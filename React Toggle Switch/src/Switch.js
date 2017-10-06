@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import Toggle from './Toggle'
 import './App.css';
 
 class Switch extends Component {
@@ -7,12 +8,21 @@ class Switch extends Component {
     this.state={
       time: 'night'
     };
+    this.handleClick = this.handleClick.bind(this);
+  }
+
+  handleClick(){
+    if(this.state.time === 'night'){
+      this.setState({ time: 'day' });
+    }else{
+      this.setState({ time: 'day' });
+    }
   }
 
   render() {
     return (
       <div className="Switch" data-time={this.state.time}>
-        Switch Component
+        <Toggle onClick={this.handleClick} time={this.state.time}/>
       </div>
     );
   }
