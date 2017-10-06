@@ -1,6 +1,13 @@
 //Adding styling using SASS
 
 $animation-speed: 2.5s;
+//colors
+$moon1: #EDDDD4;
+$moon2: #FCFAFA;
+	
+$sun1: #FFFFFF;
+$sun2: #FFBE0B;
+$sun3: #FB5607;
 
 .Switch{
     position: absolute;
@@ -37,4 +44,39 @@ $animation-speed: 2.5s;
         }
     }
 
+    .Toggle{
+        $width: 200px;
+        $height: $width/2;
+        box-shadow: 0 0 10px rgba(black, .1);
+    
+        width: $width;
+        height: $height;
+        border: 5px solid rgba($moon2,.125);
+        background: rgba($moon2,.05);
+        padding: 20px;
+        position: relative;
+        border-radius: $width;
+
+        &[data-time="day"]{
+            .Button{
+                left: $width/2 + 20px;
+                box-shadow: 0 0 10px 10px $sun3;
+				border: 1px solid rgba($sun3, 1) !important;
+                top: 25px;
+                
+                &::before{
+                    opacity: 1;
+                }
+            }
+        }
+
+    }
+
+
+
 }
+
+
+
+
+
