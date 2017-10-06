@@ -15,7 +15,7 @@ class Switch extends Component {
     if(this.state.time === 'night'){
       this.setState({ time: 'day' });
     }else{
-      this.setState({ time: 'day' });
+      this.setState({ time: 'night' });
     }
   }
 
