@@ -27,6 +27,24 @@ body{
     background: white;
     margin: 50px auto;
 
+    @include mq(600px){
+        margin: 10px;
+    }
+
+    h1,h2,h3{
+        font-family: 'Oswald';
+        text-transform: uppercase;
+    }
+
+    h1{
+        opacity: 0.25;
+        font-size: 20px;
+    }
+
+    .wrapper{
+        padding: 0 30px;
+    }
+
 
     .Header{
        

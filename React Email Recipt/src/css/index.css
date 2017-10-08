@@ -11,6 +11,17 @@ body {
   font-size: 18px;
   background: white;
   margin: 50px auto; }
+  @media screen and (max-width: 600px) {
+    .Email {
+      margin: 10px; } }
+  .Email h1, .Email h2, .Email h3 {
+    font-family: 'Oswald';
+    text-transform: uppercase; }
+  .Email h1 {
+    opacity: 0.25;
+    font-size: 20px; }
+  .Email .wrapper {
+    padding: 0 30px; }
   .Email .Header .wrapper {
     display: flex;
     align-items: center;
