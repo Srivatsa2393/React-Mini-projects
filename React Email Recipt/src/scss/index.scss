@@ -1,5 +1,41 @@
+// Typography
+@import 'https://fonts.googleapis.com/css?family=Alegreya+Sans:400,500|Oswald:400,700|Playfair+Display:700i,900i';
+
+
+//Mixins
+@mixin mq($width){
+    @media screen and (max-width:$width) {
+        @content;
+    }
+}
+
+
+
+
 //Styles
 body{
     width: 100vw;
     background: #EFEFEF;
+}
+
+.Email{
+    box-shadow: 0 0 10px -5px rgba(black, .3);
+    max-width: 600px;
+    font-family: 'Alegreya Sans';
+    font-weight: 400;
+    font-size: 18px;
+    background: white;
+    margin: 50px auto;
+
+
+    .Header{
+       
+        .wrapper{
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+            height: 70px;
+            color: #EA867A;
+        }
+    }
 }
