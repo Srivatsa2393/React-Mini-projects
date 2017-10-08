@@ -17,5 +17,28 @@ body {
     justify-content: flex-end;
     height: 70px;
     color: #EA867A; }
+  .Email .Image {
+    height: 300px;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    color: mistyrose; }
+    @media screen and (max-width: 480px) {
+      .Email .Image {
+        height: 180px; } }
+    .Email .Image .Logo {
+      position: relative;
+      z-index: 2;
+      font-family: 'Playfair Display';
+      font-style: italic;
+      font-weight: 900;
+      font-size: 72px;
+      letter-spacing: -0.05em; }
+      @media screen and (max-width: 480px) {
+        .Email .Image .Logo {
+          font-size: 48px; } }
 
 /*# sourceMappingURL=index.css.map */

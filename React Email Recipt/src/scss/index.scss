@@ -38,4 +38,35 @@ body{
             color: #EA867A;
         }
     }
+
+    .Image{
+        height: 300px;
+        background-size: cover;
+        background-position: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+        color: mistyrose;
+
+        @include mq(480px) {
+            height: 180px;
+        }
+
+        .Logo{
+            position: relative;
+            z-index: 2;
+            font-family: 'Playfair Display';
+            font-style: italic;
+            font-weight: 900;
+            font-size: 72px;
+            letter-spacing: -0.05em;
+
+            @include mq(480px){
+                font-size: 48px;
+            }
+        }
+    }
+
+
 }
