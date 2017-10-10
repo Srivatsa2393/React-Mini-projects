@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import Signoff from './Signoff';
 
 class Returns extends Component{
     render() {
@@ -13,6 +14,7 @@ class Returns extends Component{
                 <p>
                     Thanks again, you rock!<br /><strong>Srivatsa</strong>
                 </p>
+                <Signoff link="https://srivatsa.info" label="srivatsa.info" />
             </div>
         );
     }
