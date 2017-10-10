@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import Order from './Order';
+import Returns from './Returns';
 
 class Content extends Component{
     render() {
@@ -16,6 +17,7 @@ class Content extends Component{
                         shipping="79"
                         link="https://static.pexels.com/photos/34950/pexels-photo.jpg"
                     />
+                    <Returns />
                 </div>
             </div>
         );
