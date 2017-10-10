@@ -5,7 +5,8 @@ class Content extends Component{
         return(
             <div className="Content">
                 <div className="wrapper">
-                 Content Component
+                    <h2>{this.props.title}</h2>
+                    <p>{this.props.body}</p>
                 </div>
             </div>
         );
