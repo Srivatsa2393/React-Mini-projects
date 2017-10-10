@@ -36,7 +36,7 @@ body {
     align-items: center;
     justify-content: center;
     position: relative;
-    color: mistyrose; }
+    color: #E8250F; }
     @media screen and (max-width: 480px) {
       .Email .Image {
         height: 180px; } }
@@ -102,5 +102,26 @@ body {
         margin-top: 1em; }
       .Email .Content .OrderDetails strong {
         font-weight: 600; }
+
+.signoff {
+  position: relative;
+  z-index: 2;
+  font-family: 'Playfair Display';
+  font-style: italic;
+  font-weight: 900;
+  font-size: 48px;
+  letter-spacing: -0.05em;
+  text-align: center;
+  display: block; }
+
+.sitelink {
+  text-transform: uppercase;
+  margin-top: 2em;
+  display: block;
+  text-align: center;
+  text-decoration: none;
+  color: black;
+  font-size: 13px;
+  font-weight: 600; }
 
 /*# sourceMappingURL=index.css.map */
