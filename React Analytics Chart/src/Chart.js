@@ -1,11 +1,11 @@
 import React, { Component } from 'react';
-import './Chart.css';
+import Title from './Title';
 
 class App extends Component {
 render() {
     return (
       <div className="Chart">
-        Chart component
+        <Title title="Views on React DailyUI Items"/>
       </div>
     );
   }
