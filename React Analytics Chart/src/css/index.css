@@ -1,0 +1,35 @@
+@import "https://fonts.googleapis.com/css?family=Roboto:400,700";
+body {
+  font-family: 'Roboto';
+  font-weight: 400;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  background: #2E294E;
+  color: #36382E; }
+  body #chart {
+    height: 100vh;
+    width: 100vw;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    background: #2E294E; }
+
+.Chart {
+  height: 370px;
+  width: 600px;
+  background: #FFFFFF;
+  box-shadow: 0 5px 10px -5px rgba(0, 0, 0, 0.2); }
+  .Chart .Title {
+    text-align: center;
+    font-weight: 700;
+    padding: 30px 0;
+    padding-bottom: 0;
+    text-transform: uppercase;
+    letter-spacing: 0.18rem; }
+
+/*# sourceMappingURL=index.css.map */

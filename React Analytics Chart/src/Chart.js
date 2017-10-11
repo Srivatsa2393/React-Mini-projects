@@ -5,7 +5,7 @@ class App extends Component {
 render() {
     return (
       <div className="Chart">
-        <Title title="Views on React DailyUI Items"/>
+        <Title title="Views on React Daily UI Items"/>
       </div>
     );
   }
