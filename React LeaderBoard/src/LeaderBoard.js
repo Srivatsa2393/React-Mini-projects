@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import Title from './Title';
+import List from './List';
 import './App.css';
 
 class LeaderBoard extends Component {
@@ -41,6 +42,7 @@ class LeaderBoard extends Component {
     return (
       <div className="LeaderBoard">
         <Title title={this.state.title} />
+        <List people={this.state.people} />
       </div>
     );
   }
