@@ -13,5 +13,12 @@ body {
   width: 400px;
   background: #FFFFFF;
   box-shadow: 0 5px 10px -5px rgba(0, 0, 0, 0.2); }
+  .LeaderBoard .Title {
+    padding: 20px;
+    background: #121212;
+    color: white;
+    font-weight: 700l;
+    text-transform: uppercase;
+    text-align: center; }
 
 /*# sourceMappingURL=index.css.map */
