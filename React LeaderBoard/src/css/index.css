@@ -20,5 +20,29 @@ body {
     font-weight: 700l;
     text-transform: uppercase;
     text-align: center; }
+  .LeaderBoard ul {
+    padding: 20px; }
+  .LeaderBoard .Person {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px; }
+    .LeaderBoard .Person:first-child {
+      margin-bottom: 15px; }
+      .LeaderBoard .Person:first-child .Image {
+        transform: scale(1.15); }
+    .LeaderBoard .Person:last-child {
+      margin-bottom: 0; }
+    .LeaderBoard .Person .Image {
+      height: 44px;
+      width: 44px;
+      background: red;
+      border-radius: 44px;
+      transform: scale(0.9); }
+    .LeaderBoard .Person .Name {
+      margin-left: 10px; }
+    .LeaderBoard .Person .Score {
+      margin-left: auto;
+      font-weight: 700; }
 
 /*# sourceMappingURL=index.css.map */

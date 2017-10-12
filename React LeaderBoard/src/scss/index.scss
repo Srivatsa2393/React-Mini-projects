@@ -27,4 +27,43 @@ body{
         text-transform: uppercase;
         text-align: center;
     }
+
+    ul{
+        padding: 20px;
+    }
+
+    .Person{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 10px;
+
+        &:first-child{
+            margin-bottom: 15px;
+            .Image{
+                transform: scale(1.15)
+            }
+        }
+
+        &:last-child{
+            margin-bottom: 0;
+        }
+
+        .Image{
+            height: 44px;
+            width: 44px;
+            background: red;
+            border-radius: 44px;
+            transform: scale(.9);
+        }
+
+        .Name{
+            margin-left: 10px;
+        }
+
+        .Score{
+            margin-left: auto;
+            font-weight: 700;
+        }
+    }
 }
