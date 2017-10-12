@@ -1,10 +1,11 @@
 import React, { Component } from 'react';
+import ChartBlock from './ChartBlock';
 
 class ChartItem extends Component{
     render() {
         return(
             <div className="ChartItem">
-                ChartItem component
+                <ChartBlock value={this.props.value} />
             </div>
         );
     }
