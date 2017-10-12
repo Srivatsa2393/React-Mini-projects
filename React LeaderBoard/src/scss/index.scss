@@ -1,0 +1,21 @@
+// Typefaces
+@import 'https://fonts.googleapis.com/css?family=Roboto+Mono:400,700';
+
+//Styles
+body{
+    background: #EEEEEE;
+}
+
+#leaderboard{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.LeaderBoard{
+    font-family: 'Roboto Mono', monospace;
+    width: 400px;
+    background: #FFFFFF;
+    box-shadow: 0 5px 10px -5px rgba(black, .2);
+}
