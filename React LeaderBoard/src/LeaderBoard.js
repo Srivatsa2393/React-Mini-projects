@@ -4,11 +4,11 @@ import './App.css';
 class App extends Component {
   render() {
     return (
-      <div className="App">
-        App component
+      <div className="LeaderBoard">
+        LeaderBoard component
       </div>
     );
   }
 }
 
-export default App;
+export default LeaderBoard;
