@@ -1,4 +1,4 @@
-var chartData = [
+export default [
 	{
 		id: 1,
 		name: 'Sign Up',

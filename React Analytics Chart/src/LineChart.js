@@ -14,7 +14,7 @@ class LineChart extends Component{
         });
 
 
-        let chartItems = this.props.data.map((dataPoint, i){
+        let chartItems = this.props.data.map((dataPoint, i) => {
             let percent = (dataPoint.value / highPoint.value) * 100 + '%';
         });
 
