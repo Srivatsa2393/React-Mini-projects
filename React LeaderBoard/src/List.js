@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import Person from './Person';
 
 class List extends Component{
     sortArray(){
@@ -19,13 +20,13 @@ class List extends Component{
         let peopleList = this.sortArray();
 
         let people = peopleList.map((person, i) => {
-            return <Person />
+            return <Person key= {i} name={person.name} image={person.image} score={person.score}/>
         })
 
         
         return(
             <ul>
-
+                {people}
             </ul>
         );
     }
