@@ -33,7 +33,7 @@ class Location extends Component {
   }
 
   render() {
-    let location = this.state.city + ',' + this.state.country;
+    let location = this.state.city + ', ' + this.state.country;
     return (
       <div className="Location">
         <UI status="active" locationName={location}/>
