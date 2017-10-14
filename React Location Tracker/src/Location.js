@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import axios from 'axios';
+import UI from './UI.js';
 import './App.css';
 
 class Location extends Component {
@@ -35,7 +36,7 @@ class Location extends Component {
     let location = this.state.city + ',' + this.state.country;
     return (
       <div className="Location">
-       Location Component
+        <UI status="active" locationName={location}/>
       </div>
     );
   }
