@@ -23,11 +23,11 @@ class Map extends Component{
 
     componentDidUpdate() {
         var latLong = this.props.latLong;
+        this.map = map;
         var map = map.panTo(this.props.latLong, {
             zoom: 12,
             duration: 500
         });
-        this.map = map;
     }
 
     render() {
