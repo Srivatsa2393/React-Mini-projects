@@ -107,7 +107,42 @@ $white: #EADEDA;
     }
 
 
+    // Map
+	.Map {
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		overflow: hidden;
+		mix-blend-mode: multiply;
+		border-radius: 10px;
+		background: $blue;
+		opacity: 0;
+		transition: opacity 1s ease 1s;
+		
+		@include mq(420px) {
+			border-radius: 0;
+		}
+		
+		&[data-loaded="true"] {
+			opacity: 1;
+		}
+	}
+}
 
-
+@keyframes pulse {
+	0% {
+		box-shadow: 0 0 0 0 rgba($pink, 0);
+	}
+	
+	50% {
+		box-shadow: 0 0 10px 0 rgba($pink, 1);
+	}
+	
+	75%,
+	100% {
+		box-shadow: 0 0 20px 20px rgba($pink, 0);
+	}
 }
 
