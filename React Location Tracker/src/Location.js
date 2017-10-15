@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import axios from 'axios';
-import UI from './UI.js';
+import UI from './UI';
+import Map from './Map';
 import './App.css';
 
 class Location extends Component {
@@ -37,6 +38,7 @@ class Location extends Component {
     return (
       <div className="Location">
         <UI status="active" locationName={location}/>
+        <Map latLong={this.state.latLong} />
       </div>
     );
   }
