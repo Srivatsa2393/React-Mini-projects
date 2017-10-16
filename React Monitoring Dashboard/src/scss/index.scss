@@ -1,0 +1,23 @@
+// Variables
+
+// Colors
+$blue: #05668D;
+$seaweed: #028090;
+$green: #00A896;
+$lightgreen: #02C39A;
+$white: #FEFFF7;
+$black: #121212;
+
+// Typography
+@import 'https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700';
+
+//Styles
+@mixin mq($width) { 
+    @media screen and (max-width: $width){
+        @content;
+    }
+}
+
+body{
+    background: $lightgreen;
+}
