@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import Group from './Group';
 import './App.css';
 
 class App extends Component {
@@ -28,7 +29,10 @@ class App extends Component {
     })
     return (
       <div className="container">
-        App component
+        <div className="title">Mentions</div>
+        <div className="content">
+          {numbers}
+        </div>
       </div>
     );
   }
