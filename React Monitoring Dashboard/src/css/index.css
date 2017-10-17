@@ -1,0 +1,30 @@
+@import "https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700";
+body {
+  background: #02C39A;
+  font-family: 'Open Sans', sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; }
+
+#container {
+  background: #FEFFF7;
+  margin: 50px;
+  height: 500px;
+  width: calc(100vw - 100px);
+  position: relative;
+  overflow: hidden;
+  padding: 50px;
+  box-sizing: border-box;
+  box-shadow: 0 -10px 10px -10px rgba(18, 18, 18, 0.25); }
+  @media screen and (max-width: 780px) {
+    #container {
+      height: 90vh; } }
+  @media screen and (max-width: 480px) {
+    #container {
+      margin: 20px;
+      width: calc(100vw - 40px);
+      height: 96vh;
+      padding: 20px; } }
+
+/*# sourceMappingURL=index.css.map */

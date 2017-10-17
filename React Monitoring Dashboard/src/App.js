@@ -28,7 +28,7 @@ class App extends Component {
       return <Group name={number.name} value={number.value} />
     })
     return (
-      <div className="container">
+      <div id="container">
         <div className="title">Mentions</div>
         <div className="content">
           {numbers}
