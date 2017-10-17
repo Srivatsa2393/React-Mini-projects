@@ -124,3 +124,46 @@ body{
         }
     }
 }
+
+.graphs {
+	position: absolute;
+	bottom: 212px;
+	animation: graph 30s infinite linear;
+	opacity: 1;
+	
+	@include mq(480px) {
+		opacity: .2;
+	}
+}
+
+@keyframes graph {
+	0% {
+		left: -1px;
+	}
+	
+	100% {
+		left: -2601px;
+	}
+}
+
+.graph {
+	position: relative;
+	
+	svg {
+		position: absolute;
+		
+		&:first-child {
+			left: 0;
+			top: 0;
+		}
+		
+		&:last-child {
+			left: 2598px;
+			top: 0;
+		}
+	}
+}
+
+.graphSVG {
+	fill: $lightgreen;
+}

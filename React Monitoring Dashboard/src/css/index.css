@@ -121,4 +121,32 @@ body {
     .lines .line:nth-child(20) {
       opacity: 1; }
 
+.graphs {
+  position: absolute;
+  bottom: 212px;
+  animation: graph 30s infinite linear;
+  opacity: 1; }
+  @media screen and (max-width: 480px) {
+    .graphs {
+      opacity: .2; } }
+
+@keyframes graph {
+  0% {
+    left: -1px; }
+  100% {
+    left: -2601px; } }
+.graph {
+  position: relative; }
+  .graph svg {
+    position: absolute; }
+    .graph svg:first-child {
+      left: 0;
+      top: 0; }
+    .graph svg:last-child {
+      left: 2598px;
+      top: 0; }
+
+.graphSVG {
+  fill: #02C39A; }
+
 /*# sourceMappingURL=index.css.map */

@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import Group from './Group';
 import Lines from './Lines';
+import Graphs from './Graphs';
 import './App.css';
 
 class App extends Component {
@@ -35,6 +36,7 @@ class App extends Component {
           {numbers}
         </div>
         <Lines />
+        <Graphs />
       </div>
     );
   }
