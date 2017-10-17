@@ -27,4 +27,43 @@ body {
       height: 96vh;
       padding: 20px; } }
 
+.title {
+  color: #05668D;
+  font-size: 60px;
+  font-weight: 100; }
+  @media screen and (max-width: 780px) {
+    .title {
+      font-size: 48px; } }
+  @media screen and (max-width: 480px) {
+    .title {
+      font-size: 30px; } }
+
+.content {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-top: 5vh; }
+  @media screen and (max-width: 780px) {
+    .content {
+      flex-direction: column;
+      justify-content: center;
+      align-items: space-between;
+      height: 80%; } }
+  .content .group {
+    width: 33.33%;
+    text-align: center; }
+    @media screen and (max-width: 780px) {
+      .content .group {
+        width: 100%;
+        flex: 1 0 auto; } }
+    .content .group .numbers {
+      font-size: 96px;
+      font-weight: 100;
+      margin-bottom: 10px; }
+    .content .group .label {
+      text-transform: uppercase;
+      font-weight: 600;
+      font-size: 12px;
+      letter-spacing: .1em; }
+
 /*# sourceMappingURL=index.css.map */
