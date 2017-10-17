@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import Group from './Group';
+import Lines from './Lines';
 import './App.css';
 
 class App extends Component {
@@ -33,6 +34,7 @@ class App extends Component {
         <div className="content">
           {numbers}
         </div>
+        <Lines />
       </div>
     );
   }
