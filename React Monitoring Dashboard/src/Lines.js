@@ -24,8 +24,6 @@ class Lines extends Component{
                 <div className="line"></div>
                 <div className="line"></div>
                 <div className="line"></div>
-                <div className="line"></div>
-                <div className="line"></div>
             </div>
         );
     }

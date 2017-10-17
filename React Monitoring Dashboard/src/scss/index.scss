@@ -100,3 +100,27 @@ body{
         }
     }
 }
+
+.lines{
+    position: absolute;
+    top: 0%;
+    left: 0;
+    height: 50%;
+    width: 100%;
+    opacity: .125;
+
+    @include mq(780px){
+        top: 50%;
+    }
+
+    .line{
+        height: 1px;
+        background: $blue;
+        margin-bottom: 2vh;
+        @for $i from 1 through 20{
+            &:nth-child(#{$i}){
+                opacity: $i * .05;
+            }
+        }
+    }
+}
