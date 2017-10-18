@@ -1,10 +1,11 @@
 import React, { Component } from 'react';
+import Search from './Search';
 
 class Header extends Component{
     render() {
         return(
             <div className="Header">
-                Header Component
+                <Search handleSearchInput={this.props.handleSearchInput} />
             </div>
         );
     }
