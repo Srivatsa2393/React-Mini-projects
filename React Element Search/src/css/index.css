@@ -35,4 +35,23 @@ body {
   min-height: 60px;
   color: white; }
 
+.Search {
+  padding: 10px; }
+  .Search .SearchField {
+    padding: 10px;
+    border: 0;
+    border-radius: 1px;
+    height: 40px;
+    box-sizing: border-box;
+    width: 100%;
+    font-size: 16px;
+    outline: none;
+    font-weight: 300;
+    background: transparent;
+    color: white;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.25);
+    transition: border .125s ease; }
+    .Search .SearchField:focus {
+      border-bottom: 1px solid white; }
+
 /*# sourceMappingURL=index.css.map */
