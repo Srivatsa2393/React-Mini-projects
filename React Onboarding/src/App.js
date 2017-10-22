@@ -9,12 +9,26 @@ class App extends Component {
     };
   }
 
-  
+  increaseStep(){
+    var step = this.state.step;
+    step++;
+
+    this.setState({ step: step });
+  }
+
+  decreaseStep(){
+    var step = this.state.step;
+    step--;
+
+    this.setState({ step: step });
+  }
+
+
   render() {
     return (
       <div className="App">
         <div className="Background" data-step={this.state.step}>
-
+          <Footer increaseStep={this.increaseStep} decreaseStep={this.decreaseStep} step={this.state.step}/>
         </div>
       </div>
     );
