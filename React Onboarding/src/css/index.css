@@ -2,7 +2,7 @@
 #app {
   display: flex;
   font-family: 'Montserrat', sans-serif;
-  background: mistyrose;
+  background: #121212;
   align-items: center;
   justify-content: center;
   height: 100vh;
@@ -27,7 +27,85 @@
     height: 600%;
     opacity: .9;
     pointer-events: none;
-    background: linear-gradient(to bottom, #0a1a35 0%, #d6285c 11%, #d6285c 11%, #e0990b 28%, #cee2ea 38%, #76cdf2 53%, #ffb55b 66%, #804a89 76%, #804a89 76%, #15192b 100%);
+    background: linear-gradient(to bottom, #0a1b35 0%, #d6285c 11%, #d6285c 11%, #e0990b 28%, #cee2ea 38%, #76cdf2 53%, #ffb55b 66%, #804a89 76%, #804a89 76%, #15192b 100%);
     transition: top 3s ease .125s; }
+    .App .Background[data-step="1"] {
+      top: 0%; }
+    .App .Background[data-step="2"] {
+      top: -300%; }
+    .App .Background[data-step="3"] {
+      top: -500%; }
+  .App .Slides {
+    height: 90%;
+    width: 100%;
+    overflow: hidden;
+    position: relative; }
+    .App .Slides[data-step="1"] .Wrapper {
+      left: 0%; }
+    .App .Slides[data-step="2"] .Wrapper {
+      left: -100%; }
+    .App .Slides[data-step="3"] .Wrapper {
+      left: -200%; }
+    .App .Slides .Wrapper {
+      display: flex;
+      position: relative;
+      left: 0%;
+      width: 300%;
+      height: 100%;
+      transition: left .25s ease-in-out .125s; }
+    .App .Slides .Slide {
+      align-items: center;
+      color: white;
+      display: flex;
+      flex-direction: column;
+      height: 100%;
+      justify-content: center;
+      width: 33.33%; }
+      .App .Slides .Slide .fa {
+        font-size: 128px;
+        margin-bottom: 30px; }
+      .App .Slides .Slide .Text {
+        font-size: 18px;
+        padding: 0 20%;
+        line-height: 1.4;
+        text-align: center; }
+  .App .Footer {
+    display: flex;
+    justify-content: space-between;
+    flex: 1 0 auto;
+    position: relative; }
+    .App .Footer[data-step="1"] .Button--prev {
+      pointer-events: none;
+      opacity: .5; }
+    .App .Footer[data-step="3"] .Button--next {
+      pointer-events: none;
+      opacity: .5; }
+    .App .Footer .Button {
+      align-items: center;
+      color: white;
+      display: flex;
+      justify-content: center;
+      padding: 10px;
+      transition: opacity .125s ease-in-out;
+      width: 15%; }
+    .App .Footer .Dots {
+      align-items: center;
+      flex: 1 0 auto;
+      display: flex;
+      justify-content: center; }
+      .App .Footer .Dots[data-step="1"] .Dot:nth-child(1) {
+        opacity: 1; }
+      .App .Footer .Dots[data-step="2"] .Dot:nth-child(2) {
+        opacity: 1; }
+      .App .Footer .Dots[data-step="3"] .Dot:nth-child(3) {
+        opacity: 1; }
+      .App .Footer .Dots .Dot {
+        background: white;
+        opacity: .5;
+        margin: 5px;
+        width: 8px;
+        height: 8px;
+        border-radius: 8px;
+        transition: opacity .125s ease-in-out; }
 
 /*# sourceMappingURL=index.css.map */
