@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import Slide from './Slide';
 
 class Slides extends Component{
     render() {
