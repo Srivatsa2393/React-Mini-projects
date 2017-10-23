@@ -32,5 +32,75 @@
         pointer-events: none;
 		background: linear-gradient(to bottom, rgb(10, 26, 53) 0%,rgba(214,40,92,1) 11%,rgba(214,40,92,1) 11%,rgba(224,153,11,1) 28%,rgba(206,226,234,1) 38%,rgba(118,205,242,1) 53%,rgba(255,181,91,1) 66%,rgba(128,74,137,1) 76%,rgba(128,74,137,1) 76%,rgba(21,25,43,1) 100%); 
 		transition: top 3s ease .125s;
-    }
+
+		
+		&[data-step="1"] {
+			top: 0%;
+		}
+		
+		&[data-step="2"] {
+			top: -300%;
+		}
+		
+		&[data-step="3"] {
+			top: -500%;
+		}
+	}
+	
+
+	.Footer{
+		display: flex;
+		justify-content: space-between;
+		flex: 1 0 auto;
+		position: relative;
+
+		&[data-step="1"] {
+			.Button--prev {
+				pointer-events: none;
+				opacity: .5;
+			}
+		}
+		
+		&[data-step="3"] {
+			.Button--next {
+				pointer-events: none;
+				opacity: .5;
+			}
+		}
+
+		.Button{
+			align-items: center;
+			color: white;
+			display: flex;
+			justify-content: center;
+			padding: 10px;
+			transition: opacity .125s ease-in-out;
+			width: 15%;
+		}
+
+		.Dots{
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			flex: 1 0 auto;
+
+			@for $i from 1 through 3{
+				&[data-step="#{$i}"] {
+					.Dot:nth-child(#{$i}) {
+						opacity: 1;
+					}
+				}
+			}
+
+			.Dot{
+				background: white;
+				opacity: .5;
+				margin: 5px;
+				width: 8px;
+				height: 8px;
+				border-radius: 8px;
+				transition: opacity .125s ease-in-out;
+			}
+		}
+	}
 }
