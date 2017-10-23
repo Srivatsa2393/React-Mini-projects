@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import Slides from './Slides';
 import Footer from './Footer';
 import './App.css';
 
@@ -29,6 +30,7 @@ class App extends Component {
     return (
       <div className="App">
         <div className="Background" data-step={this.state.step}>
+          <Slides step={this.state.step} />
           <Footer increaseStep={this.increaseStep} decreaseStep={this.decreaseStep} step={this.state.step}/>
         </div>
       </div>
