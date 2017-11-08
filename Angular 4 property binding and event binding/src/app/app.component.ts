@@ -6,11 +6,7 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  appComponentStartGame(event){
-    console.log(event.value);
-  }
-
-  appComponentStopGame(event){
-    console.log(event.value)
+  onIntervalFired(firedNumber: number){
+    console.log(firedNumber);
   }
 }
