@@ -1,82 +1,33 @@
-let doStuff = function () {
-    //does stuff
-}
+/*Please complete the code in nodejs/index.js so that the nodejs/index.html file 
+is served as a response to the following request:
 
-module.exports = {
-    doStuff: doStuff
-}
+GET request
+URL path /foo
+If the method or path does not match, 
+return an HTTP response with status code 404 and show the user an error message.*/
 
+const fs = require('fs');
 const http = require('http');
 
-//create a server
+const PATH = __dirname + '/index.html';
+
+//Create a http server
 let server = http.createServer((req, res) => {
-    //Executed once per http request
-});
-
-server.listen(3000, 'localhost', () => {
-    console.log('Server is listening...')
-})
-
-const http = require('http');
-let server = http.createServer();
-
-server.on('request', (req, res) => {
-    //Executed once per http request, event handler is invoked whenever a request event has been received
-})
-
-//HTTP request object
-const http = require('http');
-
-let server = http.createServer((req, res) => {
-    //reterive url, http method, http headers
     let url = req.url;
     let method = req.method;
-    let headers = req.headers;
-    console.log('URL:' , url);
-    console.log('HTTP method', method);
-    console.log('Headers', headers);
-    res.end('pong');
+    console.log(`${method} ${url}`);
+    if (method === 'GET' && url === '/foo') {
+        fs.readFile(PATH, (err, data) => {
+            res.writeHead(200, { 'Content-Type': 'text/html' });
+            res.write(data);
+            res.end();
+        });
+    }else {
+        res.statusCode = 404;
+        res.write(`<h1>${method} ${url} not implemented.</h1>`);
+    }
 });
 
 server.listen(3000, 'localhost', () => {
     console.log('Server is listening');
-});
-
-//HTTP request object
-let server = http.createServer((req, res) => {
-    let body = [];
-    req.on('data', chunk => {
-        body.push(chunk);
-    }).on('end', () => {
-        body = Buffer.concat(body).toString();
-        console.log('BODY', body);
-    });
-    res.send('pong');
-})
-
-//Express framework
-const express = require('express');
-const app = express();
-
-app.get('/', (req, res) => {
-    res.send('Hello World!')
-    res.send(req.params);
-})
-
-//Express framework middleware
-const express = require('express');
-const router = express.Router();
-let clicks = [];
-
-router.use('/:name', (req, res, next) => {
-    if(req.params.name !== 'clicks') {
-        clicks.push(req.params.name);
-    }
-    console.log('We have these hotel clicks: ' + clicks);
-    next();
-})
-
-//GET route
-router.get('/:name', (req, res) => {
-    res.send('You requested hotel' + req.params.name);
 })
