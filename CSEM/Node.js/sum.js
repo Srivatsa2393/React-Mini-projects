@@ -22,4 +22,13 @@ for(var i = 2; i< process.argv.length; i++) {
 
 console.log(sum);
 
+//or
+
+let sum = 0;
+process.argv.slice(2).forEach((value, index, array) => {
+    if(!isNaN(value)) {
+        sum = sum + parseFloat(value);
+    }
+})
+
  
